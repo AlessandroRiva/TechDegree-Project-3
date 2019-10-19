@@ -1,0 +1,235 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Merriweather', 'Times New Roman', serif, sans-serif;
+}
+
+header {
+    background-color: rgb(47, 57, 68);
+}
+
+header h1 { 
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    padding: 30px 0;
+    font-weight: 900;
+}
+
+article h2,
+article p {
+    text-align: center;
+}
+
+article h2 {
+    padding-top: 25px;
+    padding-bottom: 10px;
+    color: rgb(47, 57, 68);
+    font-size: 1.1rem;
+    font-weight: 900;
+}
+
+article p {
+    width: 90%;
+    margin: auto;
+    font-size: 0.88rem;
+    color: rgb(174, 178, 182);
+    font-weight: 100;
+    padding-bottom: 35px;
+}
+
+.separator {
+    border-bottom: solid rgb(47, 57, 68) 4px;
+    width: 90%;
+    margin: auto;
+}
+
+section .separator {
+    margin-top: 3px;
+    width: 100%;
+    border-bottom: solid rgb(47, 57, 68) 2px;
+}
+
+section {
+    width: 90%;
+    margin: auto;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    color: rgb(47, 57, 68);
+    font-size: 1.1rem;
+    font-weight: 900;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+label {
+    display: block;
+    font-size: 0.88rem;
+    color: rgb(106, 118, 131);
+    padding: 10px 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+  background: rgb(239,240,241);
+  border: none;
+  font-size: 1.1rem;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  color: rgb(47, 57, 68);
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-family: 'Merriweather';
+}
+
+::placeholder {
+    text-align: right;
+    font-style: italic;
+    font-size: 0.88rem;
+    color: rgb(189, 189, 189);
+}
+
+input:focus {
+    border: solid 2px rgb(47, 57, 68);                                   
+}
+
+select {
+    font-size: 1rem;
+    color: rgb(189, 189, 189);
+    height: 50px;
+}
+
+input[id="zipcode"] {
+    width: 50%;
+}
+
+#main-info {
+    padding-bottom: 20px;
+    border-bottom: solid rgb(47, 57, 68) 2px;
+}
+
+fieldset p {
+    margin: auto;
+    font-size: 0.88rem;
+    color: rgb(106, 118, 131);
+    font-weight: 100;
+    padding-bottom: 10px;
+}
+
+#secondary-info div {
+    width: 95%;
+    margin: auto;
+}
+
+#secondary-info label {
+    display: inline;
+}
+
+#secondary-info input {
+    margin: 10px 0;
+    margin-right: 10px;
+    background-color: white;
+}
+
+#format-p,
+#other-p {
+    padding-top: 15px;
+}
+
+textarea {
+    margin-bottom: 20px;
+    height: 15vh;
+    margin-top: 6px;
+    resize: none;
+}
+
+button {
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    background-color: rgb(105, 184, 180);
+    font-size: 1.1rem;
+    font-family: 'Merriweather';
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid rgb(105, 184, 180);
+    margin-bottom: 10px;
+  }
+
+  footer p {
+      text-align: center;
+      font-style: italic;
+      color: rgb(189, 189, 189);
+      font-size: 0.88rem;
+      padding-top: 15px;
+      margin-bottom: 200px;
+      word-spacing: 1.1px;
+  }
+
+  /* ----------- tablet/desktop ----------- */
+  
+  @media (min-width: 768px) {
+
+    .separator,
+    section {
+        max-width: 692px;
+    }
+
+    article h2 {
+        font-size: 1.3rem;
+        word-spacing: 2px;
+        padding-top: 50px;
+    }
+
+    legend {
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+
+    article p {
+        padding-bottom: 40px;
+    }
+
+    #main-info div {
+        padding: 5px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #main-info input,
+    #main-info select {
+        width: 80%
+    }
+
+    #zipcode-container input {
+        width: 60%;
+    }
+
+    #zipcode-container {
+        width: 50%;
+        justify-self: center;
+        justify-content: flex-start;
+        margin-bottom: 30px;
+    }
+
+    #secondary-info div {
+        width: 100%;
+    }
+  }
